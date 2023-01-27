@@ -6,7 +6,6 @@
   padding: 0;
   color: #171717;
   font-family: 'Actor', sans-serif;
-  background-color: white;
 }
 
 h1 h2 h3 h4 h5 h6{
@@ -19,4 +18,16 @@ ul li{
 
 a{
   cursor: pointer;
+}
+.background-image{
+  background-image: url("./assets/images/tech-people.jpg");
+  filter:  grayscale(25%) brightness(40%) contrast(75%) saturate(80%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+
 }

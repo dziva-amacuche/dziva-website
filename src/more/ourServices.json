@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "nome": "Suporte Informatico",
+    "descricao": "",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "nome": "Software PHC",
+    "descricao": "",
+    "image": ""
+  },
+  { "id": 3, "nome": "Desenvolvimento Web", "descricao": "", "image": "" }
+]
