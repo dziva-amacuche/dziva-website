@@ -40,6 +40,9 @@ const Container = styled.section`
     cursor: pointer;
     margin: 2rem 0 0 43%;
   }
+  button:hover{
+    background-color:#dc241f ;
+  }
 `;
 
 export default ServicesContainer;

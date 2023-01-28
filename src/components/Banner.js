@@ -31,7 +31,7 @@ const Details = styled.div`
 
   p {
     margin-top: 2rem;
-    color: #171717;
+    color: hsla(0, 0%, 0%, 1);
     font-size: 16px;
   }
 

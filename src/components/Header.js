@@ -5,26 +5,29 @@ import Banner from "./Banner";
 
 const Header = () => {
   return (
-    <><div className="background-image"></div><NAV>
-          <a src="#"><img src={logo}></img></a>
-          <ul>
-              <li>
-                  <a src="#">Home</a>
-              </li>
-              <li>
-                  <a src="#">Nossos servicos</a>
-              </li>
-              <li>
-                  <a src="#">Sobre nos</a>
-              </li>
-              <li>
-                  <a src="#">Contacto</a>
-              </li>
-          </ul>
+    <>
+      <div className="background-image"></div>
+      <NAV>
+        <a src="#">
+          <img src={logo}></img>
+        </a>
+        <ul>
+          <li>
+            <a src="#">Home</a>
+          </li>
+          <li>
+            <a src="#">Nossos servicos</a>
+          </li>
+          <li>
+            <a src="#">Sobre nos</a>
+          </li>
+          <li>
+            <a src="#">Contacto</a>
+          </li>
+        </ul>
       </NAV>
-      <Banner/>
-      </>
-
+      <Banner />
+    </>
   );
 };
 
@@ -32,16 +35,15 @@ const NAV = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 3.8rem;
-  background-color: hsla(360, 50%, 100%, 0.78);
+  background-color: hsla(0, 0%, 0%, 0.77);
   width: 95.25%;
   position: absolute;
-  top:0rem;
+  top: 0rem;
   bottom: 0;
   z-index: 2;
   align-items: center;
   padding: 0 2rem;
-  border-bottom: 1.5px solid #636363;
-
+  border-bottom: none;
   img {
     width: 5rem;
     filter: contrast(180%);
@@ -58,7 +60,11 @@ const NAV = styled.nav`
   ul li {
     margin: 0 2rem;
     font-size: 16px;
+    a {
+      color: #dc241f;
+    }
   }
+
 `;
 
 export default Header;

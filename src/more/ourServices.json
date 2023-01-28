@@ -3,13 +3,18 @@
     "id": 1,
     "nome": "Suporte Informatico",
     "descricao": "",
-    "image": ""
+    "image": "./icons/suporte-informatico.png"
   },
   {
     "id": 2,
     "nome": "Software PHC",
     "descricao": "",
-    "image": ""
+    "image": "./icons/software-phc.png"
   },
-  { "id": 3, "nome": "Desenvolvimento Web", "descricao": "", "image": "" }
+  {
+    "id": 3,
+    "nome": "Desenvolvimento Web",
+    "descricao": "",
+    "image": "./icons/desenvolvimento.png"
+  }
 ]

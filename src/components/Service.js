@@ -7,7 +7,7 @@ function Service() {
     
 serviceData.map((service)=>{return(
     <ServiceContainer>
-        <img></img>
+        <img src={service.image}></img>
         <p>{service.nome}</p>
     </ServiceContainer>
     )
@@ -23,6 +23,10 @@ border: 2px solid #DC241F;
 border-radius: 8px;
 text-align: center;
 margin: 1rem;
+img{
+  width: 3rem;
+  margin-top: 2rem;
+}
 
 `
 
