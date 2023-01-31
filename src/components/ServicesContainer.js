@@ -15,7 +15,8 @@ function ServicesContainer() {
 }
 
 const Container = styled.section`
-  height: 100vh;
+  min-height: 102vh;
+  overflow: auto;
 
   h1 {
     text-align: center;
