@@ -5,43 +5,45 @@ import HappyClients from "../assets/images/happy-clients.jpg";
 function AboutUs() {
   return (
     <About>
-      <h1>Sobre Nós</h1>
       <main>
-        <div className="text-container">
-          <div className="about-text">
-            <p>
-              DZIVA é uma empresa que opera na área de Tecnologias de Informação
-              e comunicação (TICs), com objectivo de contribuir para a
-              eficiência na gestão de empresas.
-              <br /> Nosso trabalho consiste em oferecer soluções completas em
-              TICs, que permitam eliminar custos e automatizar tarefas do
-              dia-a-dia contribuindo, assim, para um aumento real da
-              produtividade dos nossos clientes
-            </p>
+        <h1>Sobre Nós</h1>
+        <div className="about-container">
+          <div className="text-container">
+            <div className="about-text">
+              <p>
+                DZIVA é uma empresa que opera na área de Tecnologias de
+                Informação e comunicação (TICs), com objectivo de contribuir
+                para a eficiência na gestão de empresas.
+                <br /> Nosso trabalho consiste em oferecer soluções completas em
+                TICs, que permitam eliminar custos e automatizar tarefas do
+                dia-a-dia contribuindo, assim, para um aumento real da
+                produtividade dos nossos clientes
+              </p>
 
-            <div className="more-container">
-              <div className="mission">
-                <h1>Nossa Missão</h1>
-                <p>
-                  Oferecer soluções completas de tecnologia de informação que
-                  permitam automatizar tarefas do dia-a-dia das empresas,
-                  garantindo assim um aumento real da produtividade dos nossos
-                  clientes
-                </p>
-              </div>
-              <div className="mission">
-                <h1>Nossa Visão</h1>
-                <p>
-                  Tornarmo-nos uma referência na Província de Maputo e em
-                  Moçambique através na prestação de serviços na área de
-                  Informática e Tecnologias de informação de comunicação.
-                </p>
+              <div className="more-container">
+                <div className="mission">
+                  <h2>Nossa Missão</h2>
+                  <p>
+                    Oferecer soluções completas de tecnologia de informação que
+                    permitam automatizar tarefas do dia-a-dia das empresas,
+                    garantindo assim um aumento real da produtividade dos nossos
+                    clientes
+                  </p>
+                </div>
+                <div className="mission">
+                  <h2>Nossa Visão</h2>
+                  <p>
+                    Tornarmo-nos uma referência na Província de Maputo e em
+                    Moçambique através na prestação de serviços na área de
+                    Informática e Tecnologias de informação de comunicação.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="image-container">
-          <img src={HappyClients}></img>
+          <div className="image-container">
+            <img src={HappyClients}></img>
+          </div>
         </div>
       </main>
     </About>
@@ -50,50 +52,43 @@ function AboutUs() {
 
 const About = styled.section`
   height: 100vh;
-  background-color: hsla(2, 75%, 49%, 0.47);
-  h1 {
-    text-align: center;
-    font-size: 32px;
-    margin-top: 4rem;
-  }
+  background-color: #f8f8f8;
+  overflow: auto;
+  width: 100%;
   main {
-    overflow: auto;
-    position: relative;
-    margin: 0 7rem;
-    display: flex;
+    margin: 4rem;
+    text-align: justify;
+    h1 {
+      text-align: center;
+    }
 
-    .text-container {
-      width: 50%;
-
-      .about-text {
-        margin-top: 4rem;
-        p {
-          text-align: justify;
-          margin: 1rem 0 0 0;
-        }
+    .about-container {
+      display: flex;
+      width: 100%;
+      .text-container {
+        display: block;
+        width: 50%;
+        margin: 4rem;
 
         .more-container {
           display: flex;
-          margin-top: 4rem;
+          width: 100%;
           justify-content: space-between;
+          margin-top: 4rem;
+
           .mission {
-            h1 {
-              font-size: 18px;
-              margin: 0;
-              text-align: left;
-            }
-            p {
-              width: 90%;
-              font-size: 16px;
-            }
+            width: 45%;
           }
         }
       }
-    }
-
-    .image-container {
-      img{
-        width: 30rem;
+      .image-container {
+        width: 50%;
+        text-align: center;
+        img {
+          width: 90%;
+          display: block;
+          margin: 4rem auto;
+        }
       }
     }
   }

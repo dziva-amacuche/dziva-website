@@ -31,7 +31,7 @@ const Details = styled.div`
 
   p {
     margin-top: 2rem;
-    color: hsla(0, 0%, 0%, 1);
+    color: #222423;
     font-size: 16px;
   }
 
@@ -48,18 +48,27 @@ const Details = styled.div`
       font-size: 15px;
     }
 
-    .more-info{
+    .more-info {
+      border: 1px solid #636363;
       background-color: #636363;
       width: 6rem;
       color: white;
-  
+
+      :hover {
+        background-color: #3c3e3d;
+        border: 1px solid #3c3e3d;
+      }
     }
 
-    .contact-button{
+    .contact-button {
       width: 11rem;
       background: none;
       border: 1px solid #dc241f;
       color: #dc241f;
+      :hover {
+        background-color: #d32c27;
+        color: white;
+      }
     }
   }
 `;

@@ -4,7 +4,7 @@ import Service from "./Service";
 
 function ServicesContainer() {
   return (
-    <Container>
+    <Container id="services">
       <h1>Nossos Servicos</h1>
       <div className="services-container">
         <Service />
@@ -17,6 +17,7 @@ function ServicesContainer() {
 const Container = styled.section`
   min-height: 102vh;
   overflow: auto;
+  width: 100%;
 
   h1 {
     text-align: center;

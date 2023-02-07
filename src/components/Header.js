@@ -16,7 +16,7 @@ const Header = () => {
             <a src="#">Home</a>
           </li>
           <li>
-            <a src="#">Nossos servicos</a>
+            <a src="#services">Nossos servicos</a>
           </li>
           <li>
             <a src="#">Sobre nos</a>
@@ -60,8 +60,15 @@ const NAV = styled.nav`
   ul li {
     margin: 0 2rem;
     font-size: 16px;
+    cursor: pointer;
+    
+
+
     a {
       color: #dc241f;
+      :hover{
+      color: white;
+    }
     }
   }
 

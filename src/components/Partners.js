@@ -13,34 +13,72 @@ import VVAR from "../assets/Partners-logo/VVAR.png";
 function Partners() {
   return (
     <Parcerias>
-      <div className="container">
-        <img src={dell}></img>
-        <img src={engage}></img>
-        <img src={hp}></img>
-        <img src={kaspersky}></img>
-        <img src={lenovoIsp}></img>
-        <img src={lenovoPP}></img>
-        <img src={phc}></img>
-        <img src={sophos}></img>
-        <img src={VVAR}></img>
+      <div className="parcerias-container">
+        <h1>Parceiros</h1>
+        <div className="container">
+          <div className="partner">
+            <img src={dell}></img>
+          </div>
+          <div className="partner">
+            <img src={engage}></img>
+          </div>
+          <div className="partner">
+            <img src={hp}></img>
+          </div>
+          <div className="partner">
+            <img src={kaspersky}></img>
+          </div>
+          <div className="partner">
+            <img src={lenovoIsp}></img>
+          </div>
+          <div className="partner">
+            {" "}
+            <img src={lenovoPP}></img>
+          </div>
+          <div className="partner">
+            <img src={phc}></img>
+          </div>
+          <div className="partner">
+            {" "}
+            <img src={sophos}></img>
+          </div>
+          <div className="partner">
+            {" "}
+            <img src={VVAR}></img>
+          </div>
+        </div>
       </div>
     </Parcerias>
   );
 }
 
 const Parcerias = styled.div`
-  overflow: auto;
-  .container {
-    display: flex;
-    overflow: auto;
-    height: fit-content;
-    margin: 0 4rem 0 4rem;
-    justify-content: space-between;
-    width: 100%;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
 
-    img {
-      width: 12rem;
-      height: 6rem;
+  .parcerias-container {
+    height: 100vh;
+    margin: 4rem;
+    h1 {
+      margin: 4rem 0;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      .partner {
+        width: 30%;
+        height: 20vh;
+        img {
+          width: 10rem;
+          aspect-ratio: 3/2;
+          object-fit: contain;
+        }
+      }
     }
   }
 `;
