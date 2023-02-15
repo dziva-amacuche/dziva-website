@@ -16,5 +16,23 @@
     "nome": "Desenvolvimento Web",
     "descricao": "",
     "image": "./icons/desenvolvimento.png"
+  },
+  {
+    "id": 4,
+    "nome": "Suporte Informatico",
+    "descricao": "",
+    "image": "./icons/suporte-informatico.png"
+  },
+  {
+    "id": 5,
+    "nome": "Software PHC",
+    "descricao": "",
+    "image": "./icons/software-phc.png"
+  },
+  {
+    "id": 6,
+    "nome": "Desenvolvimento Web",
+    "descricao": "",
+    "image": "./icons/desenvolvimento.png"
   }
 ]

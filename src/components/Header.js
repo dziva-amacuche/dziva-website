@@ -1,13 +1,28 @@
+import React, { useState, useEffect } from "react";
 import logo from "../assets/images/Dziva-logo.png";
 import styled from "styled-components";
 import "../App.css";
 import Banner from "./Banner";
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 100) {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="background-image"></div>
-      <NAV>
+      <NAV className={isActive ? "active" : ""}>
         <a src="#">
           <img src={logo}></img>
         </a>
@@ -26,6 +41,7 @@ const Header = () => {
           </li>
         </ul>
       </NAV>
+      <div className="background-image"></div>
       <Banner />
     </>
   );
@@ -35,15 +51,19 @@ const NAV = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 3.8rem;
-  background-color: hsla(0, 0%, 0%, 0.77);
+  background-color: hsla(0, 0%, 0%, 0.2);
   width: 95.25%;
-  position: absolute;
+  position: sticky;
   top: 0rem;
-  bottom: 0;
+  margin-bottom: -3.8rem;
   z-index: 2;
   align-items: center;
   padding: 0 2rem;
   border-bottom: none;
+
+  &.active {
+    background-color: grey;
+  }
   img {
     width: 5rem;
     filter: contrast(180%);
@@ -61,17 +81,14 @@ const NAV = styled.nav`
     margin: 0 2rem;
     font-size: 16px;
     cursor: pointer;
-    
-
 
     a {
       color: #dc241f;
-      :hover{
-      color: white;
-    }
+      :hover {
+        color: white;
+      }
     }
   }
-
 `;
 
 export default Header;

@@ -9,13 +9,12 @@ function ServicesContainer() {
       <div className="services-container">
         <Service />
       </div>
-      <button>Veja todos nossos servicos</button>
     </Container>
   );
 }
 
 const Container = styled.section`
-  min-height: 102vh;
+  height: 102vh;
   overflow: auto;
   width: 100%;
 
@@ -29,8 +28,14 @@ const Container = styled.section`
   .services-container {
     margin: 2.5rem 5rem -2.5rem 5rem;
     height: 60vh;
-    display:flex;
+    display: flex;
     justify-content: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .services-container > div:nth-child(n + 4) {
+    display: none;
   }
   button {
     border: none;
@@ -42,8 +47,8 @@ const Container = styled.section`
     cursor: pointer;
     margin: 2rem 0 0 43%;
   }
-  button:hover{
-    background-color:#dc241f ;
+  button:hover {
+    background-color: #dc241f;
   }
 `;
 
