@@ -18,6 +18,7 @@ ul li{
 
 a{
   cursor: pointer;
+  text-decoration: none;
 }
 .background-image{
   background-image: url("./assets/images/tech-people.jpg");

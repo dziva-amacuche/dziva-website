@@ -2,19 +2,19 @@
   {
     "id": 1,
     "nome": "Suporte Informatico",
-    "descricao": "",
+    "descricao": "Oferecemos soluções rápidas e eficientes em suporte técnico informático para ajudar sua empresa a resolver problemas e evitar interrupções em suas operações.",
     "image": "./icons/suporte-informatico.png"
   },
   {
     "id": 2,
     "nome": "Software PHC",
-    "descricao": "",
+    "descricao": "A solução ideal para empresas que buscam otimizar seus processos e aumentar a eficiência operacional.",
     "image": "./icons/software-phc.png"
   },
   {
     "id": 3,
     "nome": "Desenvolvimento Web",
-    "descricao": "",
+    "descricao": "Aprimore sua presença online com websites profissionais, que são bem elaborados, modernos e fáceis de usar.",
     "image": "./icons/desenvolvimento.png"
   },
   {

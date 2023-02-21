@@ -53,6 +53,7 @@ const Details = styled.div`
       background-color: #636363;
       width: 6rem;
       color: white;
+      transition: background-color 0.25s ease-in-out;
 
       :hover {
         background-color: #3c3e3d;
@@ -65,6 +66,8 @@ const Details = styled.div`
       background: none;
       border: 1px solid #dc241f;
       color: #dc241f;
+      transition: background-color 0.25s ease-in-out;
+
       :hover {
         background-color: #d32c27;
         color: white;
