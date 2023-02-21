@@ -7,6 +7,10 @@ import Banner from "./Banner";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [tiSubdropDownVisible, setTISubDropdownVisible] = useState(false);
+  const [redeSubdropDownVisible, setRedeSubDropdownVisible] = useState(false);
+  const [webSubDropdownVisible, setWebSubDropdownVisible] = useState(false);
+  const [cctvSubDropdownVisible, setCCTVSubDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,37 +35,100 @@ const Header = () => {
           <li>
             <a src="#">Home</a>
           </li>
+
           <li
             className="services"
             onMouseEnter={() => setDropdownVisible(true)}
             onMouseLeave={() => setDropdownVisible(false)}
           >
-            <a href="#">Nossos servicos</a>
+            <a>Nossos servicos</a>
+
             {dropdownVisible && (
               <ul className="dropdown-menu">
                 <li
-                  onMouseEnter={() => setDropdownVisible(false)}
-                  onMouseLeave={() => setDropdownVisible(false)}
+                  onMouseEnter={() => setTISubDropdownVisible(true)}
+                  onMouseLeave={() => setTISubDropdownVisible(false)}
                 >
-                  <a href="#">Consultoria de TI</a>
-                  {dropdownVisible && (
-                    <ul  className="dropdown-menu">
-                    <li><a>Consultoria de TI</a></li>
-                    <li><a>Outsourcing de TI</a></li>
-                    <li><a>Suporte de TI</a></li>
-                    <li><a>Seguranca da informacao</a></li>
+                  <a>Consultoria de TI</a>
+                  {tiSubdropDownVisible && (
+                    <ul className="dropdown-menu sub">
+                      <li>
+                        <a>Consultoria de TI</a>
+                      </li>
+                      <li>
+                        <a>Outsourcing de TI</a>
+                      </li>
+                      <li>
+                        <a>Suporte de TI</a>
+                      </li>
+                      <li>
+                        <a>Seguranca da informacao</a>
+                      </li>
                     </ul>
-
                   )}
                 </li>
-                <li>
+                <li
+                  onMouseEnter={() => setRedeSubDropdownVisible(true)}
+                  onMouseLeave={() => setRedeSubDropdownVisible(false)}
+                >
                   <a href="#">Rede</a>
+                  {redeSubdropDownVisible && (
+                    <ul className="dropdown-menu sub">
+                      <li>
+                        <a>Cabeamento Estruturado</a>
+                      </li>
+                      <li>
+                        <a>Projetos de Redes</a>
+                      </li>
+                      <li>
+                        <a>Instalação Wi-fi</a>
+                      </li>
+                      <li>
+                        <a>Cabeamento de Rede</a>
+                      </li>
+                      <li>
+                        <a>Certificação de rede</a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
-                <li>
+                <li
+                  onMouseEnter={() => setWebSubDropdownVisible(true)}
+                  onMouseLeave={() => setWebSubDropdownVisible(false)}
+                >
                   <a href="#">Web</a>
+                  {webSubDropdownVisible && (
+                    <ul className="dropdown-menu sub">
+                      <li>
+                        <a>Domínios </a>
+                      </li>
+                      <li>
+                        <a>Hospedagem</a>
+                      </li>
+                      <li>
+                        <a>Design de Websites e Aplicações</a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
-                <li>
+                <li
+                  onMouseEnter={() => setCCTVSubDropdownVisible(true)}
+                  onMouseLeave={() => setCCTVSubDropdownVisible(false)}
+                >
                   <a href="#">CCTV</a>
+                  {cctvSubDropdownVisible && (
+                    <ul className="dropdown-menu sub">
+                      <li>
+                        <a>Projeto</a>
+                      </li>
+                      <li>
+                        <a>Instalação</a>
+                      </li>
+                      <li>
+                        <a>Manutenção</a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
               </ul>
             )}
@@ -115,14 +182,18 @@ const NAV = styled.nav`
     .services {
       .dropdown-menu {
         position: absolute;
-        top: 1rem;
+        top: 1.8rem;
         left: 15rem;
-        width: 20%;
+        width: 60%;
         padding: 1rem;
         list-style: none;
         display: inline;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1;
+        .sub {
+          left: 7rem;
+          top: 0rem;
+        }
 
         li {
           margin: 0;

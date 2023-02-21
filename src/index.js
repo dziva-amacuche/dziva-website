@@ -5,7 +5,6 @@ import Services from "./components/ServicesContainer.js";
 import AboutUs from "./components/AboutUs.js";
 import WhyUs from "./components/WhyUs.js";
 import Partners from "./components/Partners.js";
-import ContactPage from "./components/ContactPage.js"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +14,5 @@ root.render(
     <Services />
     <WhyUs />
     <Partners />
-    <ContactPage/>
   </React.StrictMode>
 );

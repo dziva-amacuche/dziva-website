@@ -55,28 +55,39 @@ function Partners() {
 const Parcerias = styled.div`
   width: 100%;
   text-align: center;
-  height: 100vh;
+  height: 45vh;
+  background-color: white;
 
   .parcerias-container {
     height: 100vh;
     margin: 4rem;
+    display: flex;
     h1 {
       margin: 4rem 0;
     }
     .container {
       display: flex;
-      height: 100vh;
+      height: 40vh;
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;
+      margin-top: 2rem;
 
       .partner {
-        width: 30%;
-        height: 20vh;
+        width: 20%;
+        height: 0vh;
         img {
-          width: 10rem;
+          width: 9rem;
           aspect-ratio: 3/2;
           object-fit: contain;
+          cursor: pointer;
+          filter: grayscale(100%) contrast(80%);
+          transition: transform 0.25s ease-in-out;
+
+          :hover{
+            filter: grayscale(0);
+            transform: scale(1.2);
+          }
         }
       }
     }
