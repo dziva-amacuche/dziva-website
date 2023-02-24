@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/images/Dziva-logo.png";
 import styled from "styled-components";
 import "../App.css";
-import Banner from "./Banner";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -11,6 +10,12 @@ const Header = () => {
   const [redeSubdropDownVisible, setRedeSubDropdownVisible] = useState(false);
   const [webSubDropdownVisible, setWebSubDropdownVisible] = useState(false);
   const [cctvSubDropdownVisible, setCCTVSubDropdownVisible] = useState(false);
+
+  //PHC
+
+  const [phcSubDropDownVisible, setPHCSubDropdownVisible] = useState(false);
+  const [phcSTSubdropDownVisible, setPHCSTSubDropdownVisible] = useState(false);
+  const [phcSSSubdropDownVisible, setPHCSSSubDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,7 +46,7 @@ const Header = () => {
             onMouseEnter={() => setDropdownVisible(true)}
             onMouseLeave={() => setDropdownVisible(false)}
           >
-            <a>Nossos servicos</a>
+            <a>Serviços</a>
 
             {dropdownVisible && (
               <ul className="dropdown-menu">
@@ -62,7 +67,7 @@ const Header = () => {
                         <a>Suporte de TI</a>
                       </li>
                       <li>
-                        <a>Seguranca da informacao</a>
+                        <a>Segurança da informacao</a>
                       </li>
                     </ul>
                   )}
@@ -134,6 +139,79 @@ const Header = () => {
             )}
           </li>
 
+          <li
+            className="services phc"
+            onMouseEnter={() => setPHCSubDropdownVisible(true)}
+            onMouseLeave={() => setPHCSubDropdownVisible(false)}
+          >
+            <a>Soluções PHC</a>
+            {phcSubDropDownVisible && (
+              <ul className="dropdown-menu">
+                <li
+                  onMouseEnter={() => setPHCSTSubDropdownVisible(true)}
+                  onMouseLeave={() => setPHCSTSubDropdownVisible(false)}
+                >
+                  <a>Soluções Transversais</a>
+                  {phcSTSubdropDownVisible && (
+                    <ul className="dropdown-menu sub">
+                      <li>
+                        <a>Gestão e ERP</a>
+                      </li>
+                      <li>
+                        <a>Financeira</a>
+                      </li>
+                      <li>
+                        <a>CRM</a>
+                      </li>
+                      <li>
+                        <a>Vencimentos e Segurança no Trabalho </a>
+                      </li>
+                      <li>
+                        <a>Gestão de Capital Humano </a>
+                      </li>
+
+                      <li>
+                        <a>Equipas e Projetos </a>
+                      </li>
+                      <li>
+                        <a>Frota </a>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+                <li
+                  onMouseEnter={() => setPHCSSSubDropdownVisible(true)}
+                  onMouseLeave={() => setPHCSSSubDropdownVisible(false)}
+                >
+                  <a>Soluções Setoriais</a>
+                  {phcSSSubdropDownVisible && (
+                    <ul className="dropdown-menu sub">
+                      <li>
+                        <a>Indústria e Produção </a>
+                      </li>
+                      <li>
+                        <a>Logística e Distribuição </a>
+                      </li>
+                      <li>
+                        <a>Restauração </a>
+                      </li>
+                      <li>
+                        <a>Retalho </a>
+                      </li>
+                      <li>
+                        <a>Clínicas </a>
+                      </li>
+
+                      <li>
+                        <a>Construção Civil </a>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+              </ul>
+            )}
+          </li>
+
           <li>
             <a src="#">Sobre nos</a>
           </li>
@@ -143,7 +221,6 @@ const Header = () => {
         </ul>
       </NAV>
       <div className="background-image"></div>
-      <Banner />
     </>
   );
 };
@@ -161,7 +238,7 @@ const NAV = styled.nav`
   align-items: center;
   padding: 0 2rem;
   border-bottom: none;
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.45s ease-in-out;
 
   &.active {
     background-color: grey;
@@ -182,17 +259,19 @@ const NAV = styled.nav`
     .services {
       .dropdown-menu {
         position: absolute;
-        top: 1.8rem;
-        left: 15rem;
-        width: 60%;
+        top: 2.1rem;
+        left: 17.8rem;
+        width: 15%;
         padding: 1rem;
         list-style: none;
         display: inline;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1;
+        background-color: grey;
         .sub {
           left: 7rem;
           top: 0rem;
+          width: 80%;
         }
 
         li {
@@ -208,10 +287,16 @@ const NAV = styled.nav`
             :hover {
               color: #dc241f;
             }
+
+       
           }
         }
       }
     }
+    .phc {
+              .dropdown-menu {
+              left: 30rem;}
+            }
   }
   ul li {
     margin: 0 2rem;

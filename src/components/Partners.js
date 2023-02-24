@@ -56,7 +56,7 @@ const Parcerias = styled.div`
   width: 100%;
   text-align: center;
   height: 45vh;
-  background-color: white;
+  background-color: grey;
 
   .parcerias-container {
     height: 100vh;
