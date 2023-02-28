@@ -28,6 +28,16 @@ function Footer() {
             <img src={facebook}></img>
             <img src={linkedin}></img>
           </div>
+
+          <div className="newsletter-container">
+            <h3>NEWSLETTER</h3>
+            <form>
+              <input placeholder="Endereco de email"></input>
+              <input placeholder="Primeiro nome"></input>
+              <input placeholder="Apelido"></input>
+              <input placeholder="Numero de celular"></input>
+            </form>
+          </div>
         </div>
     </RODAPE>
   );
@@ -53,6 +63,12 @@ width: 100%;
       width: 2rem;
       cursor: pointer;
     }
+  }
+  
+  .newsletter-container{
+    form{
+    display: flex;
+    flex-direction: column}
   }}
 `;
 

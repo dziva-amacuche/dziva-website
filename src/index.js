@@ -1,22 +1,20 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header.js";
-import Banner from "./components/Banner.js";
-import Services from "./components/ServicesContainer.js";
-import AboutUs from "./components/AboutUs.js";
-import WhyUs from "./components/WhyUs.js";
-import Partners from "./components/Partners.js";
-import Footer from "./components/Footer.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ConsultoriaDeTI from "./pages/ConsultoriaDeTI.js"; 
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+       {/* <Route path="/" element={<Layout />}> */}
+          <Route index element={<Home />} />
+          <Route path="consultoria" element={<ConsultoriaDeTI />} />
+        {/* </Route> */}
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Header />
-    <Banner/>
-    <AboutUs />
-    <Services />
-    <WhyUs />
-    <Partners />
-    <Footer/>
-  </React.StrictMode>
-);
+root.render(<App/>);
