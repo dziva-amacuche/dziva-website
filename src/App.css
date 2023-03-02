@@ -36,6 +36,12 @@ a {
   background-image: url("./assets/images/consulting-bg.jpg");
 }
 
+.background-image.rede {
+  background-image: url("./assets/images/network-bg.jpg");
+
+
+}
+
 .banner-info {
   top: 12rem;
   position: absolute;
@@ -46,12 +52,13 @@ a {
 .banner-info h1 {
   color: #dc241f;
   width: 85%;
+  font-size: 48px;
 }
 
 .banner-info p {
-  margin-top: 2rem;
+  margin: 2rem 0 1rem 0;
   color: #222423;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .banner-info.buttons {
@@ -60,10 +67,25 @@ a {
   justify-content: space-between;
   width: 70%;
 }
-.banner-info ul li{
-  font-size: 18px;
+.banner-info ul {
+  margin: 2rem;
 }
-.buttons button{
+
+.banner-info ul li {
+  font-size: 18px;
+  margin: 8px;
+  list-style: square;
+}
+
+.banner-info ul li a {
+  cursor: pointer;
+}
+
+.banner-info ul li a:hover {
+  color: #dc241f;
+}
+
+.buttons button {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
@@ -72,7 +94,7 @@ a {
   margin-top: 1rem;
 }
 .more-info {
-  background-color: #DC241F;
+  background-color: #dc241f;
   width: 6rem;
   color: white;
   transition: background-color 0.25s ease-in-out;
@@ -82,3 +104,60 @@ a {
   background-color: #a32d29;
 }
 
+.option {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.option p {
+  font-size: 18px;
+}
+
+.option h2 {
+  font-size: 42px;
+  margin: 0 0 1rem 0;
+}
+
+.option ul li {
+  list-style: circle;
+}
+
+.option-header {
+  margin: 4rem 12rem;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container img {
+  width: 55%;
+}
+
+.option-text {
+  width: 40%;
+}
+
+.rename h4 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 8rem;
+}
+
+.rename-box {
+  display: flex;
+  margin: 2rem;
+}
+
+.rename-box img{
+  width: 60%;
+}
+
+.rename ul li{
+  font-size: 22px;
+  margin: 2.2rem 0;
+  list-style:disc;
+}
