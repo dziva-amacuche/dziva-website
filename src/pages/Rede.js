@@ -11,9 +11,26 @@ function Rede() {
       <Navbar />
       <div className="background-image rede"></div>
       <div className="banner-info">
-
-</div>
-<div className="option"></div>
+        <h1>Rede</h1>
+        <ul>
+          <li>
+            <a>Cabeamento Estruturado </a>
+          </li>
+          <li>
+            <a>Projetos de Redes </a>
+          </li>
+          <li>
+            <a>Instalação Wi-fi </a>
+          </li>
+          <li>
+            <a>Cabeamento de Rede </a>
+          </li>
+          <li>
+            <a>Certificação de rede </a>
+          </li>
+        </ul>
+      </div>
+      <div className="option"></div>
       <Footer />
     </NETWORK>
   );

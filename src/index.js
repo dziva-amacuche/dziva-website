@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import ConsultoriaDeTI from "./pages/ConsultoriaDeTI.js"; 
+import Consultoria from "./pages/Consultoria.js"; 
 import Rede from "./pages/Rede.js"
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
       <Routes>
        {/* <Route path="/" element={<Layout />}> */}
           <Route index element={<Home />} />
-          <Route path="consultoria" element={<ConsultoriaDeTI />} />
+          <Route path="consultoria" element={<Consultoria />} />
           <Route path="rede" element={<Rede />} />
 
         {/* </Route> */}

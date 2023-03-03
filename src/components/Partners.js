@@ -55,12 +55,12 @@ function Partners() {
 const Parcerias = styled.div`
   width: 100%;
   text-align: center;
-  height: 45vh;
+  max-height: 45vh;
   background-color: grey;
 
   .parcerias-container {
-    height: 100vh;
-    margin: 4rem;
+    height: 100%;
+    margin: 4rem 4rem 0 4rem;
     display: flex;
     h1 {
       margin: 4rem 0;
