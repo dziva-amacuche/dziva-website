@@ -19,6 +19,23 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.coming-soon {
+  background-color: hsla(0, 8%, 72%, 0.404);
+  backdrop-filter: blur(1.2px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  line-height: 100vh;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+
 .background-image {
   background-image: url("./assets/images/tech-people.jpg");
   filter: grayscale(25%) brightness(80%) contrast(75%) saturate(80%);
@@ -38,8 +55,14 @@ a {
 
 .background-image.rede {
   background-image: url("./assets/images/network-bg.jpg");
+}
 
+.background-image.web {
+  background-image: url("./assets/images/web-bg.jpg");
+}
 
+.background-image.cctv {
+  background-image: url("./assets/images/cctv-bg.jpg");
 }
 
 .banner-info {
@@ -73,12 +96,14 @@ a {
 
 .banner-info ul li {
   font-size: 18px;
+  color: #c7c1c1;
   margin: 8px;
   list-style: square;
 }
 
 .banner-info ul li a {
   cursor: pointer;
+  color: #c7c1c1;
 }
 
 .banner-info ul li a:hover {
@@ -152,25 +177,25 @@ a {
   margin: 2rem;
 }
 
-.rename-box img{
+.rename-box img {
   width: 60%;
 }
 
-.rename-description{
+.rename-description {
   width: 50%;
 }
-.rename-description p{
+.rename-description p {
   margin-left: 4rem;
   width: 80%;
 }
 
-.rename-description h4{
+.rename-description h4 {
   text-align: left;
-  margin:1rem 0 2rem 4rem;
+  margin: 1rem 0 2rem 4rem;
 }
 
-.rename ul li{
+.rename ul li {
   font-size: 22px;
   margin: 1rem 0;
-  list-style:disc;
+  list-style: disc;
 }

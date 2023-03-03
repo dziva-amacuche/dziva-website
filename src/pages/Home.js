@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../components/Header.js";
 import Banner from "../components/Banner.js";
-import Services from "../components/ServicesContainer.js";
+// import Services from "../components/ServicesContainer.js";
 import AboutUs from "../components/AboutUs.js";
 import WhyUs from "../components/WhyUs.js";
 import Partners from "../components/Partners.js";
 import Footer from "../components/Footer.js";
+
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
       <Header />
       <Banner />
       <AboutUs />
-      <Services />
+      {/* <Services /> */}
       <WhyUs />
       <Partners />
       <Footer />
