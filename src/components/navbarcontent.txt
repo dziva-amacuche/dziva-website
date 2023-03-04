@@ -1,0 +1,141 @@
+        <li
+          className="services"
+          onMouseEnter={() => setDropdownVisible(true)}
+          onMouseLeave={() => setDropdownVisible(false)}
+        >
+          <a>Serviços</a>
+
+          {dropdownVisible && (
+            <ul className="dropdown-menu">
+              <li>
+                <a>Consultoria de TI</a>
+
+                  <ul className="dropdown-menu sub">
+                    <li>
+                      <a>Consultoria de TI</a>
+                    </li>
+                    <li>
+                      <a>Outsourcing de TI</a>
+                    </li>
+                    <li>
+                      <a>Suporte de TI</a>
+                    </li>
+                    <li>
+                      <a>Segurança da informacao</a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#">Rede</a>
+                  <ul className="dropdown-menu sub">
+                    <li>
+                      <a>Cabeamento Estruturado</a>
+                    </li>
+                    <li>
+                      <a>Projetos de Redes</a>
+                    </li>
+                    <li>
+                      <a>Instalação Wi-fi</a>
+                    </li>
+                    <li>
+                      <a>Cabeamento de Rede</a>
+                    </li>
+                    <li>
+                      <a>Certificação de rede</a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#">Web</a>
+                  <ul className="dropdown-menu sub">
+                    <li>
+                      <a>Domínios </a>
+                    </li>
+                    <li>
+                      <a>Hospedagem</a>
+                    </li>
+                    <li>
+                      <a>Design de Websites e Aplicações</a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#">CCTV</a>
+                  <ul className="dropdown-menu sub">
+                    <li>
+                      <a>Projeto</a>
+                    </li>
+                    <li>
+                      <a>Instalação</a>
+                    </li>
+                    <li>
+                      <a>Manutenção</a>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          )}
+        </li>
+
+        <li
+          className="services phc"
+          onMouseEnter={() => setPHCSubDropdownVisible(true)}
+          onMouseLeave={() => setPHCSubDropdownVisible(false)}
+        >
+          <a>Soluções PHC</a>
+          {phcSubDropDownVisible && (
+            <ul className="dropdown-menu">
+              <li>
+                <a>Soluções Transversais</a>
+                  <ul className="dropdown-menu sub">
+                    <li>
+                      <a>Gestão e ERP</a>
+                    </li>
+                    <li>
+                      <a>Financeira</a>
+                    </li>
+                    <li>
+                      <a>CRM</a>
+                    </li>
+                    <li>
+                      <a>Vencimentos e Segurança no Trabalho </a>
+                    </li>
+                    <li>
+                      <a>Gestão de Capital Humano </a>
+                    </li>
+
+                    <li>
+                      <a>Equipas e Projetos </a>
+                    </li>
+                    <li>
+                      <a>Frota </a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a>Soluções Setoriais</a>
+                  <ul className="dropdown-menu sub">
+                    <li>
+                      <a>Indústria e Produção </a>
+                    </li>
+                    <li>
+                      <a>Logística e Distribuição </a>
+                    </li>
+                    <li>
+                      <a>Restauração </a>
+                    </li>
+                    <li>
+                      <a>Retalho </a>
+                    </li>
+                    <li>
+                      <a>Clínicas </a>
+                    </li>
+
+                    <li>
+                      <a>Construção Civil </a>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          )}
+        </li>
