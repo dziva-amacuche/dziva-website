@@ -44,7 +44,7 @@ function Footer() {
 }
 
 const RODAPE = styled.div`
-background-color: grey;
+background-color: #383434;
 height: 30vh;
 overflow: hidden;
 width: 100%;

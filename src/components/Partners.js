@@ -56,7 +56,7 @@ const Parcerias = styled.div`
   width: 100%;
   text-align: center;
   max-height: 45vh;
-  background-color: grey;
+  background-color: #383434;
 
   .parcerias-container {
     height: 100%;

@@ -106,7 +106,30 @@ function Navbar() {
           onMouseLeave={() => setPHCSubDropdownVisible(false)}
         >
           <a>Soluções PHC</a>
-          {phcSubDropDownVisible && <div></div>}
+          {phcSubDropDownVisible && (
+            <div className="dropdown-menu phc">
+              <ul>
+                <h3>Soluções Transversais</h3>
+                <li><a>Gestão e ERP</a></li>
+                <li><a>Financeira</a></li>
+                <li><a>Suporte Técnico</a></li>
+                <li><a>CRM</a></li>
+                <li><a>Vencimentos e Segurança no Trabalho</a></li>
+                <li><a>Gestão de Capital Humano</a></li>
+                <li><a>Equipas e Projetos</a></li>
+                <li><a>Frota</a></li>
+              </ul>
+              <ul>
+                <h3>Soluções Setoriais</h3>
+                <li><a>Indústria e Produção</a></li>
+                <li><a>Logística e Distribuição</a></li>
+                <li><a>Restauração</a></li>
+                <li><a>Retalho</a></li>
+                <li><a>Clínicas</a></li>
+                <li><a>Construção Civil</a></li>
+              </ul>
+            </div>
+          )}
         </li>
 
         <li>
@@ -124,7 +147,7 @@ const NAV = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 3.8rem;
-  background-color: none;
+  background-color: #383434;
   width: 95.25%;
   position: sticky;
   top: 0rem;
@@ -136,7 +159,7 @@ const NAV = styled.nav`
   transition: background-color 0.45s ease-in-out;
 
   &.active {
-    background-color: grey;
+    background-color: #383434;
   }
   img {
     width: 5rem;
@@ -156,16 +179,17 @@ const NAV = styled.nav`
       display: inline;
       .dropdown-menu {
         position: absolute;
-        top: 2.25rem;
+        top: 1.3rem;
         left: -19rem;
         width: 70rem;
-        height: 40rem;
+        height: 20rem;
         padding: 1rem;
         list-style: none;
         display: flex;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-        background-color: grey;
+        z-index: -1;
+        background-color: #383434;
+        box-shadow: 0px 1px 4px 4px  rgba(0, 0, 0, 0.5);
 
           ul{
             display: flex;
@@ -174,17 +198,18 @@ const NAV = styled.nav`
         
 
         li {
-          margin: 0;
+          margin: 1rem 0;
           font-size: 16px;
+          list-style: circle;
 
           a {
             color: white;
             display: block;
-            padding: 0.5rem 1r
+            padding: 0.5rem 1r;
             :hover {
               color: #dc241f;
-            }em;
-            transition: color 0.25s ease-in-out;
+            }
+            transition: color 0.15s ease-in-out;
 
           }
         }
@@ -192,14 +217,15 @@ const NAV = styled.nav`
     }
     .phc {
       .dropdown-menu {
-        left: -6rem;
+        left: -18rem;
+        width: 50rem;
+        height: 27rem;
       }
     }
   }
   ul li {
     margin: 0 2rem;
     font-size: 16px;
-    cursor: pointer;
 
     a {
       color: white;
